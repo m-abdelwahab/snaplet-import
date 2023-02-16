@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SOURCE_DATABASE_URL: ${{ secrets.SOURCE_DATABASE_URL }}
-      TARGET_DATABASE_URL: ${{ secrets.DESTINATION_DATABASE_URL }}
+      TARGET_DATABASE_URL: ${{ secrets.TARGET_DATABASE_URL }}
     steps:
       - id: checkout
         uses: actions/checkout@v3
@@ -18,7 +18,7 @@ jobs:
 
       # Configure Snaplet
       - name: Configure Snaplet
-        run: echo 'y' | snaplet config setup $TARGET_DATABASE_URL
+        run: yes | snaplet config setup $TARGET_DATABASE_URL
 
       # Capture snapshot from source
       - name:
