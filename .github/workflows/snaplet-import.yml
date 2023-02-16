@@ -1,6 +1,5 @@
 name: 'Snaplet import'
 on:
-  push:
   # schedule:
   #   - cron: '0 0 * * *' # Runs every day at midnight
 
