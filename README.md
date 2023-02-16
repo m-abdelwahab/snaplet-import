@@ -4,7 +4,7 @@ This is a GitHub action that uses [Snaplet](snaplet.dev) to import anonymized da
 
 > **Warning**
 >
-> Note that this project is experimental and is still being tested. If you run into any issues, please open an issue on this repository.
+> Note that this project is experimental and is still being tested. If you run into any issues, please [create an issue](https://github.com/m-abdelwahab/snaplet-import/issues/new).
 
 
 
