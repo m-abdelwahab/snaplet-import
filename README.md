@@ -3,6 +3,7 @@
 This is a GitHub action that uses [Snaplet](snaplet.dev) to import anonymized data from a source database to a target database. It runs on a schedule to keep the target database schema up to date.
 
 > **Warning**
+>
 > Note that this project is experimental and is still being tested. If you run into any issues, please open an issue on this repository.
 
 
