@@ -22,7 +22,7 @@ jobs:
 
       # Configure Snaplet
       - name: Configure Snaplet
-        run: snaplet config setup $TARGET_DATABASE_URL
+        run: yes Y | snaplet config setup $TARGET_DATABASE_URL
 
       # Capture snapshot from source
       - name:
