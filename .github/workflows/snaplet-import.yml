@@ -16,9 +16,9 @@ jobs:
       - name: Install Snaplet CLI
         run: curl -sL https://app.snaplet.dev/get-cli/ | bash
 
-      # # Import schema from source DB to target DB using pg_dump
-      # - name: Import schema
-      #   run: pg_dump $SOURCE_DATABASE_URL --schema-only | psql $TARGET_DATABASE_URL;
+      # Import schema from source DB to target DB using pg_dump
+      - name: Import schema
+        run: pg_dump $SOURCE_DATABASE_URL --schema-only | psql $TARGET_DATABASE_URL;
 
       # Configure Snaplet
       - name: Configure Snaplet
